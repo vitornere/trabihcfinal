@@ -15,13 +15,15 @@ FIXOS_SOURCES = informacoes.tex novosComandos.tex fichaCatalografica.tex \
 FIXOS_FILES = $(addprefix $(FIXOS_DIR)/, $(FIXOS_SOURCES))
 
 EDITAVEIS_DIR = editaveis
-EDITAVEIS_SOURCES = informacoes.tex resumo.tex abstract.tex \
-					abreviaturas.tex simbolos.tex \
-					apendices.tex anexos.tex
+EDITAVEIS_SOURCES = informacoes.tex abreviaturas.tex simbolos.tex
 EDITAVEIS_FILES = $(addprefix $(EDITAVEIS_DIR)/, $(EDITAVEIS_SOURCES))
 
 CONTEUDO_DIR = $(addprefix $(EDITAVEIS_DIR)/, conteudo)
-CONTEUDO_SOURCES = introducao.tex
+CONTEUDO_SOURCES = introducao.tex planejamento.tex requisitos.tex \
+					casos_de_uso.tex metas_de_usabilidade.tex \
+					ciclo_de_vida.tex storyboard.tex prototipos.tex \
+					questionario.tex termo_de_consentimento.tex \
+					ferramentas.tex
 CONTEUDO_FILES = $(addprefix $(CONTEUDO_DIR)/, $(CONTEUDO_SOURCES))
 
 APENDICES_DIR = $(addprefix $(EDITAVEIS_DIR)/, apendices)

@@ -1,0 +1,71 @@
+\chapter[Requisitos]{Requisitos}
+
+\section{Requisitos Funcionais}
+
+\begin{table}[H]
+\begin{tabular}{|l|l| p{10cm} |c|}
+	\hline
+	\textbf{ID} & \textbf{Prioridade} & \textbf{Descrição} & \textbf{Dependência}\tabularnewline
+	\hline
+	\hline
+	RF01 & Alta & O sistema deve permitir que o administrador faça o cadastro de um restaurante. & --\tabularnewline
+	\hline
+	RF02 & Alta & O sistema deve permitir que o administrador edite um restaurante cadastrado. & RF01\tabularnewline
+	\hline
+	RF03 & Alta & O sistema deve permitir que o administrador exclua um restaurante cadastrado. & RF01\tabularnewline
+	\hline
+	RF04 & Média & O sistema deve permitir que o visitante busque um restaurante cadastrado. & RF01\tabularnewline
+	\hline
+	RF05 & Alta & O sistema deve permitir que o visitante visualize um restaurante cadastrado. & RF01\tabularnewline
+	\hline
+	RF06 & Alta & O sistema deve permitir que o administrador cadastre uma nova receita. & --\tabularnewline
+	\hline
+	RF07 & Alta & O sistema deve permitir que o administrador edite uma receita cadastrada. & RF06\tabularnewline
+	\hline
+	RF08 & Alta & O sistema deve permitir que o administrador exclua uma receita cadastrada. & RF06\tabularnewline
+	\hline
+	RF09 & Média & O sistema deve permitir que o visitante busque um receita cadastrado. & RF06\tabularnewline
+	\hline
+	RF10 & Alta & O sistema deve permitir que o visitante visualize uma receita cadastrada. & RF06\tabularnewline
+	\hline
+	RF11 & Alta & O sistema deve permitir que o administrador cadastre um novo evento gastronômico & --\tabularnewline
+	\hline
+	RF12 & Alta & O sistema deve permitir que o administrador edite um evento gastronômico. & RF10\tabularnewline
+	\hline
+	RF13 & Alta & O sistema deve permitir que o administrador exclua um evento gastronômico. & RF10\tabularnewline
+	\hline
+	RF14 & Média & O sistema deve permitir que o visitante busque um evento gastronômico. & RF10\tabularnewline
+	\hline
+	RF15 & Alta & O sistema deve permitir que o visitante visualize um evento gastronômico. & RF10\tabularnewline
+	\hline
+	\hline
+\end{tabular}
+\caption{Requisitos Funcionais do Sistema}
+\label{Requisitos_Funcionais_do_Sistema}
+\end{table}
+
+
+\section{Requisitos Não Funcionais}
+
+\begin{table}[H]
+\begin{tabular}{|l| p{11cm} ||l|}
+	\hline
+	\textbf{ID} & \textbf{Descrição} & \textbf{Característica}\tabularnewline
+	\hline
+	\hline
+	RNF1 & O sistema deve funcionar 24 horas por dia, 7 dias por semana. & Confiabilidade\tabularnewline
+	\hline
+	RNF2 & Apenas usuários com privilégios de acesso poderão adicionar, remover ou editar conteúdos do sitema. & Confiabilidade\tabularnewline
+	\hline
+	RNF3 & O sistema deverá ser de fácil utilização e intuitivo. & Usabilidade\tabularnewline
+	\hline
+	RNF4 & O sistema deve funcionar em qualquer navegador que forneça suporte HTML5. & Portabilidade\tabularnewline
+	\hline
+	RNF5 & O sistema deve se adaptar a qualquer tamanho de tela, desde telas de smartphones e tablets. & Portabilidade\tabularnewline
+	\hline
+	RNF6 & O sistema deve responder às solicitações rapidamente. & Eficiência\tabularnewline
+	\hline
+\end{tabular}
+\caption{Requisitos Não Funcionais do Sistema}
+\label{Requisitos_nao_Funcionais_do_Sistema}
+\end{table}
