@@ -23,7 +23,7 @@ CONTEUDO_SOURCES = introducao.tex planejamento.tex requisitos.tex \
 					casos_de_uso.tex metas_de_usabilidade.tex \
 					ciclo_de_vida.tex storyboard.tex prototipos.tex \
 					questionario.tex termo_de_consentimento.tex \
-					ferramentas.tex
+					ferramentas.tex metas_experiencia_usuario.tex
 CONTEUDO_FILES = $(addprefix $(CONTEUDO_DIR)/, $(CONTEUDO_SOURCES))
 
 APENDICES_DIR = $(addprefix $(EDITAVEIS_DIR)/, apendices)
