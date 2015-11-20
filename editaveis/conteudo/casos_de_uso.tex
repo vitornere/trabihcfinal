@@ -2,7 +2,7 @@
 
 \section{Diagrama de Casos de Uso}
 
-\begin{figure}[H]
+\begin{figure}[h!]
 	\begin{center}
 		\includegraphics[keepaspectratio,scale=0.6]{figuras/diagrama.eps}
 		\caption{Diagrama de Caso de Uso - Gastronomia}
@@ -11,40 +11,7 @@
 
 \section{Descrição dos Casos de Uso}
 
-\begin{table}[H]
-\begin{tabular}{| p{6cm} | p{10cm} |}
-	\hline
-	\textbf{ID} & UC01\tabularnewline
-	\hline
-	\hline
-	\textbf{Nome do Caso de Uso} & Cadastrar restaurante\tabularnewline
-	\hline
-	\textbf{Objetivo} & Adicionar um novo restaurante  na aplicação\tabularnewline
-	\hline
-	\textbf{Ator(es)} & Administrador\tabularnewline
-	\hline
-	\textbf{Pré-condição} & Estar logado com uma conta de administrador\tabularnewline
-	\hline
-	\textbf{Pós-condição} & Um novo restaurante é criado no sistema\tabularnewline
-	\hline
-	\textbf{Fluxo Principal /Básico /Normal} & Esse caso de uso começa quando o administrador seleciona a opção de criar um novo Restaurante:
-	\begin{enumerate}
-		\item O sistema encaminha o administrador para a tela de cadastro de novo restaurante.
-		\item O administrador preenche as informações necessárias para o cadastro do restaurante.
-		\item O sistema retorna a informação de que o restaurante foi cadastrado com sucesso.
-		\item O administrador é encaminhado pelo sistema à tela do restaurante recém criado.
-		\item O caso de uso é encerrado.
-	\end{enumerate} \tabularnewline
-	\hline
-	\textbf{Fluxo Alternativo} & \tabularnewline
-	\hline
-\end{tabular}
-\caption{Descricao dos Casos de Uso - Cadastrar Restaurante}
-\label{DCU_Cadastrar_Restaurante}
-\end{table}
-
-
-\begin{table}[H]
+\begin{table}[t]
 \begin{tabular}{| p{6cm} | p{10cm} |}
 	\hline
 	\textbf{ID} & UC02\tabularnewline
@@ -60,7 +27,8 @@
 	\hline
 	\textbf{Pós-condição} & \tabularnewline
 	\hline
-	\textbf{Fluxo Principal /Básico /Normal} & Este caso de uso se inicia quando o visitante seleciona a opção de restaurantes:
+	\textbf{Fluxo Principal /Básico /Normal} & \textbf{Este caso de uso se inicia quando o visitante seleciona a opção de restaurantes:}
+	\vspace{0.2cm}
 	\begin{enumerate}
 		\item O visitante clica em uma categoria de restaurante.
 		\item O sistema encaminha o visitante para uma lista de restaurantes sob aquela categoria.
@@ -69,7 +37,14 @@
 		\item Este caso de uso é encerrado.
 	\end{enumerate} \tabularnewline
 	\hline
-	\textbf{Fluxo Alternativo} & \tabularnewline
+	\textbf{Fluxo Alternativo} & \textbf{Fluxo alternativo de voltar para tela anterior:}
+	\vspace{0.2cm}
+	Este fluxo se inicia quando o visitante decide voltar para a tela anterior do sistema.
+	\begin{enumerate}
+		\item O visitante seleciona o botão “VOLTAR”.
+		\item O sistema encaminha o visitante para a página anterior do sistema.
+		\item Este caso de uso é encerrado.
+	\end{enumerate} \tabularnewline
 	\hline
 \end{tabular}
 \caption{Descricao dos Casos de Uso - Visualizar Restaurante}
@@ -77,7 +52,7 @@
 \end{table}
 
 
-\begin{table}[H]
+\begin{table}[t]
 \begin{tabular}{| p{6cm} | p{10cm} |}
 	\hline
 	\textbf{ID} & UC02\tabularnewline
@@ -93,7 +68,8 @@
 	\hline
 	\textbf{Pós-condição} & \tabularnewline
 	\hline
-	\textbf{Fluxo Principal /Básico /Normal} & Este caso de uso se inicia quando o visitante seleciona a opção de restaurantes:
+	\textbf{Fluxo Principal /Básico /Normal} & \textbf{Este caso de uso se inicia quando o visitante seleciona a opção de restaurantes:}
+	\vspace{0.2cm}
 	\begin{enumerate}
 		\item O visitante clica em uma categoria de receita.
 		\item O sistema encaminha o visitante para uma lista de receitas sob aquela categoria.
@@ -104,7 +80,107 @@
 	\hline
 	\textbf{Fluxo Alternativo} & \tabularnewline
 	\hline
+	\textbf{Fluxo Alternativo} & \textbf{Fluxo alternativo de voltar para tela anterior:}
+	\vspace{0.2cm}
+	Este fluxo se inicia quando o visitante decide voltar para a tela anterior do sistema.
+	\begin{enumerate}
+		\item O visitante seleciona o botão “VOLTAR”.
+		\item O sistema encaminha o visitante para a página anterior do sistema.
+		\item Este caso de uso é encerrado.
+	\end{enumerate} \tabularnewline
+	\hline
 \end{tabular}
 \caption{Descricao dos Casos de Uso - Visualizar Receita}
 \label{DCU_Visualizar_Receita}
+\end{table}
+
+\begin{table}[t]
+\begin{tabular}{| p{6cm} | p{10cm} |}
+	\hline
+	\textbf{ID} & UC03\tabularnewline
+	\hline
+	\hline
+	\textbf{Nome do Caso de Uso} & Visualizar Evento\tabularnewline
+	\hline
+	\textbf{Objetivo} & Apresentar detalhes de uma evento para o visitante\tabularnewline
+	\hline
+	\textbf{Ator(es)} & Visitante\tabularnewline
+	\hline
+	\textbf{Pré-condição} & Acessar a aplicação\tabularnewline
+	\hline
+	\textbf{Pós-condição} & \tabularnewline
+	\hline
+	\textbf{Fluxo Principal /Básico /Normal} & \textbf{Este caso de uso se inicia quando o visitante seleciona a opção de eventos:}
+	\vspace{0.2cm}
+	\begin{enumerate}
+		\item O visitante clica em um dos eventos listados.
+		\item O sistema encaminha o visitante para a página do evento selecionado.
+		\item Este caso de uso é encerrado.
+	\end{enumerate} \tabularnewline
+	\hline
+	\textbf{Fluxo Alternativo} & \tabularnewline
+	\hline
+	\textbf{Fluxo Alternativo} & \textbf{Fluxo alternativo de voltar para tela anterior:}
+	\vspace{0.2cm}
+	Este fluxo se inicia quando o visitante decide voltar para a tela anterior do sistema.
+	\begin{enumerate}
+		\item O visitante seleciona o botão “VOLTAR”.
+		\item O sistema encaminha o visitante para a página anterior do sistema.
+		\item Este caso de uso é encerrado.
+	\end{enumerate} \tabularnewline
+	\hline
+\end{tabular}
+\caption{Descricao dos Casos de Uso - Visualizar Evento}
+\label{DCU_Visualizar_Evento}
+\end{table}
+
+\begin{table}[t]
+\begin{tabular}{| p{6cm} | p{10cm} |}
+	\hline
+	\textbf{ID} & UC04\tabularnewline
+	\hline
+	\hline
+	\textbf{Nome do Caso de Uso} & Buscar Conteúdo\tabularnewline
+	\hline
+	\textbf{Objetivo} & Retornar conteúdo específico solicitado pelo visitante\tabularnewline
+	\hline
+	\textbf{Ator(es)} & Visitante\tabularnewline
+	\hline
+	\textbf{Pré-condição} & Acessar a aplicação\tabularnewline
+	\hline
+	\textbf{Pós-condição} & \tabularnewline
+	\hline
+	\textbf{Fluxo Principal /Básico /Normal} & \textbf{Este caso de uso se inicia quando o visitante realiza uma busca na aplicação:}
+	\vspace{0.2cm}
+	\begin{enumerate}
+		\item O sistema retorna uma lista com conteúdos que contenham o termo pesquisado.
+		\item O visitante clica em um dos conteúdos retornados.
+		\item O sistema encaminha o visitante para a página daquele conteúdo.
+		\item Este caso de uso é encerrado.
+	\end{enumerate} \tabularnewline
+	\hline
+	\textbf{Fluxo Alternativo} & \tabularnewline
+	\hline
+	\textbf{Fluxo Alternativo} & \textbf{Fluxo alternativo de filtragem de resultados:}
+	\vspace{0.2cm}
+	Este fluxo começa quando o visitante seleciona algum filtro para refinar a pesquisa no site.
+	\begin{enumerate}
+		\item O visitante clica em um dos filtros da busca.
+		\item O sistema retorna resultados que pertençam apenas à(s) categoria(s) filtrada(s).
+		\item O visitante clica em um dos conteúdos retornados.
+		\item Este caso de uso é encerrado.
+	\end{enumerate}
+
+	\textbf{Fluxo alternativo de voltar para tela anterior:}
+	\vspace{0.2cm}
+	Este fluxo se inicia quando o visitante decide voltar para a tela anterior do sistema.
+	\begin{enumerate}
+		\item O visitante seleciona o botão “VOLTAR”.
+		\item O sistema encaminha o visitante para a página anterior do sistema.
+		\item Este caso de uso é encerrado.
+	\end{enumerate} \tabularnewline
+	\hline
+\end{tabular}
+\caption{Descricao dos Casos de Uso - Visualizar Evento}
+\label{DCU_Visualizar_Evento}
 \end{table}
